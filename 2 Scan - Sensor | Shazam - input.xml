@@ -1,0 +1,55 @@
+<results active="1" alive="1" probe_time="5565" result_code="0" total="1">
+<result active="true" alive="true" ip_address="10.253.64.183">
+<scanner name="GenericTCP" port="135" portprobe="wmi" protocol="tcp" result="open" service="epmap"/>
+<scanner name="HTTPS" port="5986" portprobe="winrm_ssl" protocol="tcp" result="open" service="winrm_ssl"/>
+<scanner name="NBT" port="137" portprobe="wins" protocol="udp" result="unresolved" service="ms-nb-ns"/>
+<scanner name="DNS" port="53" portprobe="dns" protocol="udp" result="unresolved" service="dns"/>
+<scanner name="SLP" port="427" portprobe="slp" protocol="udp" result="refused" service="slp"/>
+<scanner name="GenericTCP" port="5989" portprobe="wbem" protocol="tcp" result="refused" service="wbem_https"/>
+<scanner name="HTTP" port="5985" portprobe="winrm" protocol="tcp" result="open" service="winrm">
+<response_code>404</response_code>
+<Server>Microsoft-HTTPAPI/2.0</Server>
+<http_version>HTTP/1.1</http_version>
+<response_text>Not Found</response_text>
+</scanner>
+</result>
+<parameters>
+<parameter name="mid_selector_details" value="{"mode":"specific_mid"}"/>
+<parameter name="agent" value="mid.server.MidServer SampleName"/>
+<parameter name="used_by_runbook" value="true"/>
+<parameter name="glide.xmlhelper.trim.enable" value="true"/>
+<parameter name="signature" value=""/>
+<parameter name="range_index" value="0"/>
+<textnode_parameter name="range">{"meta":["10.253.64.183-10.253.64.183"]}</textnode_parameter>
+<parameter name="shazzam_probes" value="1"/>
+<parameter name="source" value="See Payload"/>
+<parameter name="TLS_keepOriginalCertificate" value="false"/>
+<parameter name="sys_id" value="a054b8eb9f0132107f44b8b13024ab3c"/>
+<parameter name="from_host" value=""/>
+<parameter name="sys_created_on" value="2025-11-12 10:51:15"/>
+<parameter name="sys_domain" value="global"/>
+<parameter name="used_by_discovery" value="true"/>
+<parameter name="state" value="ready"/>
+<parameter name="probe_name" value="Shazzam"/>
+<parameter name="port_probe_spec" value="<portprobes><portprobe><name>wmi</name><scanner>GenericTCP</scanner><description>Windows WMI</description><conditional>false</conditional><service><name>epmap</name><port>135</port><type>TCP</type></service></portprobe><portprobe><name>snmp</name><scanner>SNMP</scanner><description>Simple Network Management Protocol</description><conditional>false</conditional><service><name>snmp</name><port>161</port><type>UDP</type></service></portprobe><portprobe><name>ssh</name><scanner>SSH</scanner><description>Secure Shell Login</description><conditional>false</conditional><service><name>ssh</name><port>22</port><type>TCP</type></service></portprobe><portprobe><name>http</name><scanner>HTTP</scanner><description>Web Servers</description><conditional>false</conditional><service><name>http</name><port>80</port><type>TCP</type></service><service><name>https</name><port>443</port><type>TCP</type></service></portprobe><portprobe><name>wins</name><scanner>NBT</scanner><description>WINS Name Resolver</description><conditional>true</conditional><service><name>ms-nb-ns</name><port>137</port><type>UDP</type></service></portprobe><portprobe><name>dns</name><scanner>DNS</scanner><description>Domain Name Resolver</description><conditional>true</conditional><service><name>dns</name><port>53</port><type>TCP/UDP</type></service></portprobe><portprobe><name>slp</name><scanner>SLP</scanner><description>Service Location Protocol</description><conditional>false</conditional><service><name>slp</name><port>427</port><type>TCP/UDP</type></service></portprobe><portprobe><name>wbem</name><scanner>GenericTCP</scanner><description>WBEM (CIM)</description><conditional>false</conditional><serviceRegistryQuery querierClassname='SLPQuery'><serviceType>service:wbem</serviceType></serviceRegistryQuery><service><name>wbem_https</name><port>5989</port><type>TCP</type></service></portprobe><portprobe><name>vmapp</name><scanner>BannerTCP</scanner><description>vCenter Server Appliance Web user interface HTTPS</description><conditional>false</conditional><service><name>vmapp_https</name><port>5480</port><type>TCP</type></service><service><name>vmapp6_https</name><port>9443</port><type>TCP</type></service></portprobe><portprobe><name>winrm</name><scanner>HTTP</scanner><description>Windows Remote Management/HTTP</description><conditional>false</conditional><service><name>winrm</name><port>5985</port><type>TCP</type></service></portprobe><portprobe><name>winrm_ssl</name><scanner>HTTPS</scanner><description>Windows Remote Management/HTTPS</description><conditional>false</conditional><service><name>winrm_ssl</name><port>5986</port><type>TCP</type></service></portprobe><portprobe><name>esxi</name><scanner>BannerTCP</scanner><description>ESXi Server Appliance web user interface</description><conditional>false</conditional><service><name>ESXi</name><port>902</port><type>TCP</type></service></portprobe></portprobes>"/>
+<parameter name="debug" value="false"/>
+<parameter name="response_to" value=""/>
+<parameter name="from_sys_id" value=""/>
+<parameter name="priority" value="1"/>
+<parameter name="agent_correlator" value="1c5478eb9f0132107f44b8b13024ab9d"/>
+<parameter name="HTTP_waitForResponseMS" value="5000"/>
+<parameter name="json_ranges" value="true"/>
+<parameter name="probe" value="eb95df760ab301550015543188996362"/>
+<parameter name="processed" value=""/>
+<parameter name="error_string" value=""/>
+<parameter name="sequence" value="19a77b0efab0000001"/>
+<parameter name="mid.discovery.max_payload_size" value="-1"/>
+<parameter name="GenericTCP_waitForConnectMS" value="3000"/>
+<textnode_parameter name="full_range">{"meta":["10.253.64.183-10.253.64.183"]}</textnode_parameter>
+<parameter name="name" value="wmi,snmp,ssh,http,wins,dns,slp,wbem,vmapp,winrm,winrm_ssl,esxi"/>
+<textnode_parameter name="mid_range">{"meta":["10.253.64.183-10.253.64.183"]}</textnode_parameter>
+<parameter name="topic" value="Shazzam"/>
+<parameter name="queue" value="output"/>
+<parameter name="ecc_queue" value="a054b8eb9f0132107f44b8b13024ab3c"/>
+</parameters>
+</results>
