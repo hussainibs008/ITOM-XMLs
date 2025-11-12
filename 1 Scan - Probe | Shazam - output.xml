@@ -1,0 +1,20 @@
+<parameters>
+<parameter name="port_probe_spec" value="<portprobes><portprobe><name>wmi</name><scanner>GenericTCP</scanner><description>Windows WMI</description><conditional>false</conditional><service><name>epmap</name><port>135</port><type>TCP</type></service></portprobe><portprobe><name>snmp</name><scanner>SNMP</scanner><description>Simple Network Management Protocol</description><conditional>false</conditional><service><name>snmp</name><port>161</port><type>UDP</type></service></portprobe><portprobe><name>ssh</name><scanner>SSH</scanner><description>Secure Shell Login</description><conditional>false</conditional><service><name>ssh</name><port>22</port><type>TCP</type></service></portprobe><portprobe><name>http</name><scanner>HTTP</scanner><description>Web Servers</description><conditional>false</conditional><service><name>http</name><port>80</port><type>TCP</type></service><service><name>https</name><port>443</port><type>TCP</type></service></portprobe><portprobe><name>wins</name><scanner>NBT</scanner><description>WINS Name Resolver</description><conditional>true</conditional><service><name>ms-nb-ns</name><port>137</port><type>UDP</type></service></portprobe><portprobe><name>dns</name><scanner>DNS</scanner><description>Domain Name Resolver</description><conditional>true</conditional><service><name>dns</name><port>53</port><type>TCP/UDP</type></service></portprobe><portprobe><name>slp</name><scanner>SLP</scanner><description>Service Location Protocol</description><conditional>false</conditional><service><name>slp</name><port>427</port><type>TCP/UDP</type></service></portprobe><portprobe><name>wbem</name><scanner>GenericTCP</scanner><description>WBEM (CIM)</description><conditional>false</conditional><serviceRegistryQuery querierClassname='SLPQuery'><serviceType>service:wbem</serviceType></serviceRegistryQuery><service><name>wbem_https</name><port>5989</port><type>TCP</type></service></portprobe><portprobe><name>vmapp</name><scanner>BannerTCP</scanner><description>vCenter Server Appliance Web user interface HTTPS</description><conditional>false</conditional><service><name>vmapp_https</name><port>5480</port><type>TCP</type></service><service><name>vmapp6_https</name><port>9443</port><type>TCP</type></service></portprobe><portprobe><name>winrm</name><scanner>HTTP</scanner><description>Windows Remote Management/HTTP</description><conditional>false</conditional><service><name>winrm</name><port>5985</port><type>TCP</type></service></portprobe><portprobe><name>winrm_ssl</name><scanner>HTTPS</scanner><description>Windows Remote Management/HTTPS</description><conditional>false</conditional><service><name>winrm_ssl</name><port>5986</port><type>TCP</type></service></portprobe><portprobe><name>esxi</name><scanner>BannerTCP</scanner><description>ESXi Server Appliance web user interface</description><conditional>false</conditional><service><name>ESXi</name><port>902</port><type>TCP</type></service></portprobe></portprobes>"/>
+<parameter name="mid_selector_details" value="{"mode":"specific_mid"}"/>
+<parameter name="used_by_runbook" value="true"/>
+<parameter name="debug" value="false"/>
+<parameter name="glide.xmlhelper.trim.enable" value="true"/>
+<textnode_parameter name="range">{"meta":["10.253.64.183-10.253.64.183"]}</textnode_parameter>
+<parameter name="range_index" value="0"/>
+<parameter name="shazzam_probes" value="1"/>
+<parameter name="HTTP_waitForResponseMS" value="5000"/>
+<parameter name="json_ranges" value="true"/>
+<parameter name="probe" value="eb95df760ab301550015543188996362"/>
+<parameter name="TLS_keepOriginalCertificate" value="false"/>
+<parameter name="mid.discovery.max_payload_size" value="-1"/>
+<parameter name="GenericTCP_waitForConnectMS" value="3000"/>
+<parameter name="used_by_discovery" value="true"/>
+<textnode_parameter name="full_range">{"meta":["10.253.64.183-10.253.64.183"]}</textnode_parameter>
+<textnode_parameter name="mid_range">{"meta":["10.253.64.183-10.253.64.183"]}</textnode_parameter>
+<parameter name="probe_name" value="Shazzam"/>
+</parameters>
