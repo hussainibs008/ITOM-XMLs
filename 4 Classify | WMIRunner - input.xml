@@ -1,45 +1,225 @@
 <results probe_time="9159" result_code="0">
-<result>
-<output>{ "wmi": { "Win32_ComputerSystem": {"Domain": "WORKGROUP","Name": "Clabs-Windows"}, "Win32_OperatingSystem": {"Caption": "Microsoft Windows Server 2022 Datacenter","Version": "10.0.20348"} }, "registry": [ { "Path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters" ,"Domain": "" ,"Hostname": "Clabs-Windows" } ] }</output>
-</result>
-<parameters>
-<parameter name="mid_selector_details" value="{"mode":"specific_mid"}"/>
-<parameter name="agent" value="mid.server.MidServer SampleName"/>
-<parameter name="glide.xmlhelper.trim.enable" value="true"/>
-<parameter name="win_protocol" value="wmi"/>
-<parameter name="signature" value=""/>
-<parameter name="use_class" value="discovery_classy_windows"/>
-<parameter name="source" value="10.253.64.183"/>
-<parameter name="WMI_FetchData" value="root\virtualization\v2\Msvm_ComputerSystem.Name,HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/Tcpip/Parameters/Domain,HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/Tcpip/Parameters/Hostname,root\MSCluster\MSCluster_Resource.PrivateProperties,root\MSCluster\MSCluster_Resource.Name,root\MSCluster\MSCluster_Node.Name,root\MSCluster\MSCluster_Cluster.Name,root\MSCluster\MSCluster_ClusterToResource.GroupComponent,root\MSCluster\MSCluster_ClusterToResource.PartComponent,root\MSCluster\MSCluster_ClusterToNode.Antecedent,root\MSCluster\MSCluster_ClusterToNode.Dependent,root\virtualization\Msvm_ComputerSystem.Name,root\MSCluster\MSCluster_Resource.Type,Win32_ComputerSystem.Domain,Win32_ComputerSystem.Name,Win32_OperatingSystem.Caption,Win32_OperatingSystem.Version"/>
-<parameter name="port_probe" value="d4a7f3f29fe02300809adecf857fcf44"/>
-<parameter name="sys_id" value="12543ceb9f0132107f44b8b13024ab82"/>
-<parameter name="from_host" value=""/>
-<parameter name="output_format" value="json"/>
-<parameter name="sys_created_on" value="2025-11-12 10:51:23"/>
-<parameter name="sys_domain" value="global"/>
-<parameter name="used_by_discovery" value="true"/>
-<parameter name="classifiers" value="<array><object name="0"><string name="ip">10.253.64.183</string><string name="classificationTable">discovery_classy_windows</string><string name="portProbeID">9802b18f0a0a0703009d322d5b5540e5</string><string name="scannerPort">135</string><string name="discover">CIs</string><number name="classificationPriority">1</number><string name="midServerID">fead0bcf9f8132107f44b8b13024ab88</string><string name="shazzamSensorID">8654f8eb9f0132107f44b8b13024abec</string><boolean name="supplementary">false</boolean><string name="ciData">&lt;CIData&gt;&lt;data&gt;&lt;fld name="ip_address"&gt;10.253.64.183&lt;/fld&gt;&lt;/data&gt;&lt;/CIData&gt;</string><string name="priority">2</string><string name="mid_selector_details">{"mode":"specific_mid"}</string></object></array>"/>
-<parameter name="state" value="ready"/>
-<parameter name="probe_name" value="Windows - Classify"/>
-<parameter name="discover" value="CIs"/>
-<parameter name="deviceHistoryParams" value="{"result":{"ip":"10.253.64.183","active":true,"alive":true,"hostName":null,"domainName":null,"scanners":[{"result":"open","service":"epmap","protocol":"tcp","name":"GenericTCP","port":"135","portProbe":"wmi","contents":{},"scanners":[],"hostName":null,"domainName":null},{"result":"open","service":"winrm_ssl","protocol":"tcp","name":"HTTPS","port":"5986","portProbe":"winrm_ssl","contents":{},"scanners":[],"hostName":null,"domainName":null},{"result":"unresolved","service":"ms-nb-ns","protocol":"udp","name":"NBT","port":"137","portProbe":"wins","contents":{},"scanners":[],"hostName":null,"domainName":null},{"result":"unresolved","service":"dns","protocol":"udp","name":"DNS","port":"53","portProbe":"dns","contents":{},"scanners":[],"hostName":null,"domainName":null},{"result":"refused","service":"slp","protocol":"udp","name":"SLP","port":"427","portProbe":"slp","contents":{},"scanners":[],"hostName":null,"domainName":null},{"result":"refused","service":"wbem_https","protocol":"tcp","name":"GenericTCP","port":"5989","portProbe":"wbem","contents":{},"scanners":[],"hostName":null,"domainName":null},{"result":"open","service":"winrm","protocol":"tcp","name":"HTTP","port":"5985","portProbe":"winrm","contents":{"response_code":"404","Server":"Microsoft-HTTPAPI/2.0","http_version":"HTTP/1.1","response_text":"Not Found"},"scanners":[],"hostName":null,"domainName":null}]},"ecc_queue":"8654f8eb9f0132107f44b8b13024abec","errMsgs":[],"status":{"valid":true,"sysID":"1c5478eb9f0132107f44b8b13024ab9d","number":"DIS0010012","scheduleID":"0f73306b9f0132107f44b8b13024ab94","jobID":"1854b0eb9f0132107f44b8b13024ab1f","discover":"CIs","include":null,"description":"Discover Now","createdOn":"2025-11-12 10:51:15","updatedOn":"2025-11-12 10:51:15","useSnmpVersion":"all","source":"Discover_now_schedule","priority":"2","includeAlive":false,"logStateChanges":false,"scratchpad":{"behavior:0":1,"unique":"e054b8eb9f0132107f44b8b13024ab3d"}}}"/>
-<parameter name="response_to" value="8654f8eb9f0132107f44b8b13024abec"/>
-<parameter name="from_sys_id" value=""/>
-<parameter name="priority" value="2"/>
-<parameter name="agent_correlator" value="1c5478eb9f0132107f44b8b13024ab9d"/>
-<parameter name="admin_share_access" value="true"/>
-<parameter name="probe" value="b11360600a0a0ba500c41bcbae55c5c4"/>
-<parameter name="processed" value=""/>
-<parameter name="error_string" value=""/>
-<parameter name="sequence" value="19a77b10e640000001"/>
-<parameter name="port" value="5986"/>
-<parameter name="cidata" value="<CIData><data><fld name="ip_address">10.253.64.183</fld></data></CIData>"/>
-<parameter name="name" value="WMI: Classify"/>
-<parameter name="topic" value="WMIRunner"/>
-<parameter name="classification_probe" value="b11360600a0a0ba500c41bcbae55c5c4"/>
-<parameter name="queue" value="output"/>
-<parameter name="ecc_queue" value="12543ceb9f0132107f44b8b13024ab82"/>
-<parameter name="credential_id" value="8fba47843dc122107f4488addddbe290"/>
-<parameter name="target_powershell_access" value="true"/>
-</parameters>
+	<result>
+		<output>{ 
+			"wmi": 
+				{ 
+				"Win32_ComputerSystem": 
+					{"Domain": "WORKGROUP",
+					"Name": "Clabs-Windows"},
+				"Win32_OperatingSystem": 
+					{
+					"Caption": "Microsoft Windows Server 2022 Datacenter",
+					"Version": "10.0.20348"
+					} 
+				},
+			 "registry": [ { 
+				"Path": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters" ,
+				"Domain": "" ,
+				"Hostname": "Clabs-Windows" } ]
+			}
+		</output>
+	</result>
+	<parameters>
+		<parameter name="mid_selector_details" value="{" mode":"specific_mid"}"/>
+		<parameter name="agent" value="mid.server.MidServer SampleName"/>
+		<parameter name="glide.xmlhelper.trim.enable" value="true"/>
+		<parameter name="win_protocol" value="wmi"/>
+		<parameter name="signature" value=""/>
+		<parameter name="use_class" value="discovery_classy_windows"/>
+		<parameter name="source" value="10.253.64.183"/>
+		<parameter name="WMI_FetchData" value="root\virtualization\v2\Msvm_ComputerSystem.Name,
+			HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/Tcpip/Parameters/Domain,
+			HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/Tcpip/Parameters/Hostname,
+			root\MSCluster\MSCluster_Resource.PrivateProperties,
+			root\MSCluster\MSCluster_Resource.Name,
+			root\MSCluster\MSCluster_Node.Name,
+			root\MSCluster\MSCluster_Cluster.Name,
+			root\MSCluster\MSCluster_ClusterToResource.GroupComponent,
+			root\MSCluster\MSCluster_ClusterToResource.PartComponent,
+			root\MSCluster\MSCluster_ClusterToNode.Antecedent,
+			root\MSCluster\MSCluster_ClusterToNode.Dependent,
+			root\virtualization\Msvm_ComputerSystem.Name,
+			root\MSCluster\MSCluster_Resource.Type,
+			Win32_ComputerSystem.Domain,
+			Win32_ComputerSystem.Name,
+			Win32_OperatingSystem.Caption,
+			Win32_OperatingSystem.Version"/>
+		<parameter name="port_probe" value="d4a7f3f29fe02300809adecf857fcf44"/>
+		<parameter name="sys_id" value="12543ceb9f0132107f44b8b13024ab82"/>
+		<parameter name="from_host" value=""/>
+		<parameter name="output_format" value="json"/>
+		<parameter name="sys_created_on" value="2025-11-12 10:51:23"/>
+		<parameter name="sys_domain" value="global"/>
+		<parameter name="used_by_discovery" value="true"/>
+		<parameter name="classifiers" 
+			value="
+				<array>
+					<object name=" 0">
+						<string name="ip">10.253.64.183</string>
+						<string name="classificationTable">discovery_classy_windows</string>
+						<string name="portProbeID">9802b18f0a0a0703009d322d5b5540e5</string>
+						<string name="scannerPort">135</string>
+						<string name="discover">CIs</string>
+						<number name="classificationPriority">1</number>
+						<string name="midServerID">fead0bcf9f8132107f44b8b13024ab88</string>
+						<string name="shazzamSensorID">8654f8eb9f0132107f44b8b13024abec</string>
+						<boolean name="supplementary">false</boolean>
+						<string name="ciData">&lt;CIData&gt;&lt;data&gt;&lt;fld name="ip_address"&gt;10.253.64.183&lt;/fld&gt;&lt;/data&gt;&lt;/CIData&gt;</string>
+						<string name="priority">2</string>
+						<string name="mid_selector_details">{"mode":"specific_mid"}</string>
+					</object>
+				</array>
+			"
+		/>
+		<parameter name="state" value="ready"/>
+		<parameter name="probe_name" value="Windows - Classify"/>
+		<parameter name="discover" value="CIs"/>
+		<parameter name="deviceHistoryParams" 
+			value="
+				{
+					"result":
+						{
+						"ip":"10.253.64.183",
+						"active":true,
+						"alive":true,
+						"hostName":null,
+						"domainName":null,
+						"scanners":
+							[
+							{
+							"result":"open",
+							"service":"epmap",
+							"protocol":"tcp",
+							"name":"GenericTCP",
+							"port":"135",
+							"portProbe":"wmi",
+							"contents":{},
+							"scanners":[],
+							"hostName":null,
+							"domainName":null
+							},
+							{
+							"result":"open",
+							"service":"winrm_ssl",
+							"protocol":"tcp",
+							"name":"HTTPS",
+							"port":"5986",
+							"portProbe":"winrm_ssl",
+							"contents":{},
+							"scanners":[],
+							"hostName":null,
+							"domainName":null
+							},
+							{
+							"result":"unresolved",
+							"service":"ms-nb-ns",
+							"protocol":"udp",
+							"name":"NBT",
+							"port":"137",
+							"portProbe":"wins",
+							"contents":{},
+							"scanners":[],
+							"hostName":null,
+							"domainName":null},
+							{
+							"result":"unresolved",
+							"service":"dns",
+							"protocol":"udp",
+							"name":"DNS",
+							"port":"53",
+							"portProbe":"dns",
+							"contents":{},
+							"scanners":[],
+							"hostName":null,
+							"domainName":null
+							},
+							{
+							"result":"refused",
+							"service":"slp",
+							"protocol":"udp",
+							"name":"SLP",
+							"port":"427",
+							"portProbe":"slp",
+							"contents":{},
+							"scanners":[],
+							"hostName":null,
+							"domainName":null
+							},
+							{
+							"result":"refused",
+							"service":"wbem_https",
+							"protocol":"tcp",
+							"name":"GenericTCP",
+							"port":"5989",
+							"portProbe":"wbem",
+							"contents":{},
+							"scanners":[],
+							"hostName":null,
+							"domainName":null
+							},
+							{
+							"result":"open",
+							"service":"winrm",
+							"protocol":"tcp",
+							"name":"HTTP",
+							"port":"5985",
+							"portProbe":"winrm",
+							"contents":
+								{"response_code":"404",
+								"Server":"Microsoft-HTTPAPI 2.0",
+								"http_version":"HTTP 1.1",
+								"response_text":"Not Found"},
+							"scanners":[],
+							"hostName":null,
+							"domainName":null
+							}
+							]
+						},
+					"ecc_queue":"8654f8eb9f0132107f44b8b13024abec",
+					"errMsgs":[],
+					"status":
+						{
+						"valid":true,
+						"sysID":"1c5478eb9f0132107f44b8b13024ab9d",
+						"number":"DIS0010012",
+						"scheduleID":"0f73306b9f0132107f44b8b13024ab94",
+						"jobID":"1854b0eb9f0132107f44b8b13024ab1f",
+						"discover":"CIs",
+						"include":null,
+						"description":"Discover Now",
+						"createdOn":"2025-11-12 10:51:15",
+						"updatedOn":"2025-11-12 10:51:15",
+						"useSnmpVersion":"all",
+						"source":"Discover_now_schedule",
+						"priority":"2",
+						"includeAlive":false,
+						"logStateChanges":false,
+						"scratchpad":
+							{
+							"behavior:0":1,
+							"unique":"e054b8eb9f0132107f44b8b13024ab3d"
+							}
+						}
+				}
+			"
+		/>
+		<parameter name="response_to" value="8654f8eb9f0132107f44b8b13024abec"/>
+		<parameter name="from_sys_id" value=""/>
+		<parameter name="priority" value="2"/>
+		<parameter name="agent_correlator" value="1c5478eb9f0132107f44b8b13024ab9d"/>
+		<parameter name="admin_share_access" value="true"/>
+		<parameter name="probe" value="b11360600a0a0ba500c41bcbae55c5c4"/>
+		<parameter name="processed" value=""/>
+		<parameter name="error_string" value=""/>
+		<parameter name="sequence" value="19a77b10e640000001"/>
+		<parameter name="port" value="5986"/>
+		<parameter name="cidata" value="<CIData><data><fld name=" ip_address">10.253.64.183< fld>< data>< CIData>"/>
+		<parameter name="name" value="WMI: Classify"/>
+		<parameter name="topic" value="WMIRunner"/>
+		<parameter name="classification_probe" value="b11360600a0a0ba500c41bcbae55c5c4"/>
+		<parameter name="queue" value="output"/>
+		<parameter name="ecc_queue" value="12543ceb9f0132107f44b8b13024ab82"/>
+		<parameter name="credential_id" value="8fba47843dc122107f4488addddbe290"/>
+		<parameter name="target_powershell_access" value="true"/>
+	</parameters>
 </results>
